@@ -27,5 +27,5 @@ athletes = [athlete1, athlete2, athlete3, athlete4]
 with open("info.txt", "w", encoding="utf-8") as file:
     for athlete in athletes:
         line = athlete.info()
-        print(line)
-        file.write(line + "\n")
+        print(line)             
+        print(line, file=file)  
